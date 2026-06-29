@@ -49,6 +49,37 @@ public class Main {
 		catedratico.mostrarInformacion();
 		
 		
+		
+		// ----------------------------------------
+		System.out.println();
+
+		System.out.println("ADMINISTRADOR");
+		Administrador administrador= new Administrador();
+		
+		administrador.setNombre("Pedro");
+		administrador.setApellidos("Gonzales");
+		administrador.setDpi("4525415263");
+		administrador.setTelefono("452541563");
+		administrador.setDireccion("jutiapa");
+		administrador.setEdad(30);
+		administrador.setGenero("Masculino");
+		
+		administrador.setCodigoEmpleado("455bsy52");
+		administrador.setUsuario("admin");
+		administrador.setPassword("45254sd");
+		administrador.setRol("administrador escuela");
+		administrador.setActivo(true);
+		
+		administrador.mostrarInformacion();
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 

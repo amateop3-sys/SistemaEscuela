@@ -69,7 +69,7 @@ public class Estudiante extends Personas {
 		System.out.println("CÁRNET: "+carnet);
 		System.out.println("GRADO: "+grado);
 		System.out.println("SECCIÓN: "+seccion);
-		System.out.println("ACTIVO: "+(activo ? "si": "no"));
+		System.out.println("ACTIVO: "+(activo ? "ACTIVO" : "INACTIVO"));
 	}
 	
 	

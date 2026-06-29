@@ -88,7 +88,7 @@ public class Catedratico extends Personas {
 		System.out.println("PROFESIÓN: "+profesion);
 		System.out.println("ESPECIALIDAD: "+especialidad);
 		System.out.println("SALARIO: "+salario);
-		System.out.println("ESTADO: "+(Activo ? "si" : "no"));
+		System.out.println("ESTADO: "+(Activo ? "ACTIVO" : "INACTIVO"));
 		
 	}
 	
