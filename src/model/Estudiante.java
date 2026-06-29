@@ -59,6 +59,18 @@ public class Estudiante extends Personas {
 	public void setActivo(boolean activo) {
 		this.activo = activo;
 	}
+
+
+
+	@Override
+	public void mostrarInformacion() {
+		super.mostrarInformacion();
+		
+		System.out.println("CÁRNET: "+carnet);
+		System.out.println("GRADO: "+grado);
+		System.out.println("SECCIÓN: "+seccion);
+		System.out.println("ACTIVO: "+(activo ? "si": "no"));
+	}
 	
 	
 	
