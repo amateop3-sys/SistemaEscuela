@@ -12,14 +12,17 @@ public class Curso {
 	private Seccion seccion;
 	private boolean activo;
 	
+	private CicloEscolar cicloEscolar;
 	
+	// constructor vacio
 	public Curso() {
 		
 	}
 
 
+	// constructor lleno
 	public Curso(int id, String codigo, Materia materia, Catedratico catedratico, Grado grado, Seccion seccion,
-			boolean activo) {
+			boolean activo, CicloEscolar cicloEscolar) {
 		super();
 		this.id = id;
 		this.codigo = codigo;
@@ -28,6 +31,7 @@ public class Curso {
 		this.grado = grado;
 		this.seccion = seccion;
 		this.activo = activo;
+		this.cicloEscolar= cicloEscolar;
 	}
 
 
@@ -98,6 +102,16 @@ public class Curso {
 
 	public void setActivo(boolean activo) {
 		this.activo = activo;
+	}
+
+
+	public CicloEscolar getCicloEscolar() {
+		return cicloEscolar;
+	}
+
+
+	public void setCicloEscolar(CicloEscolar cicloEscolar) {
+		this.cicloEscolar = cicloEscolar;
 	}
 	
 	
