@@ -28,8 +28,48 @@ public class Calificacion {
 
 	    }
 
+	
+
 	    // Getters y Setters
 
-	
+		public int getId() {
+			return id;
+		}
+
+		public void setId(int id) {
+			this.id = id;
+		}
+
+		public double getNota() {
+			return nota;
+		}
+
+		public void setNota(double nota) {
+			this.nota = nota;
+		}
+
+		public Estudiante getEstudiante() {
+			return estudiante;
+		}
+
+		public void setEstudiante(Estudiante estudiante) {
+			this.estudiante = estudiante;
+		}
+
+		public Curso getCurso() {
+			return curso;
+		}
+
+		public void setCurso(Curso curso) {
+			this.curso = curso;
+		}
+
+		public PeriodoEvaluacion getPeriodoEvaluacion() {
+			return periodoEvaluacion;
+		}
+
+		public void setPeriodoEvaluacion(PeriodoEvaluacion periodoEvaluacion) {
+			this.periodoEvaluacion = periodoEvaluacion;
+		}
 	
 }
