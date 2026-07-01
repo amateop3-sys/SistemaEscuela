@@ -1,63 +1,97 @@
 package model;
 
+
 import java.time.LocalTime;
+
+import enums.DiaSemana;
+
+
 
 public class Horario {
 
+    //=========================
+    // ATRIBUTOS
+    //=========================
 
-	    private int id;
-	    private String dia;
-	    private LocalTime horaInicio;
-	    private LocalTime horaFin;
+    private int id;
+    private DiaSemana dia;
+    private LocalTime horaInicio;
+    private LocalTime horaFin;
 
-	    public Horario() {
+    //=========================
+    // CONSTRUCTOR VACÍO
+    //=========================
 
-	    }
+    public Horario() {
 
-	    public Horario(int id,
-	                   String dia,
-	                   LocalTime horaInicio,
-	                   LocalTime horaFin) {
+    }
 
-	        this.id = id;
-	        this.dia = dia;
-	        this.horaInicio = horaInicio;
-	        this.horaFin = horaFin;
+    //=========================
+    // CONSTRUCTOR COMPLETO
+    //=========================
 
-	    }
+    public Horario(int id,
+                   DiaSemana dia,
+                   LocalTime horaInicio,
+                   LocalTime horaFin) {
 
-	    public int getId() {
-	        return id;
-	    }
+        this.id = id;
+        this.dia = dia;
+        this.horaInicio = horaInicio;
+        this.horaFin = horaFin;
 
-	    public void setId(int id) {
-	        this.id = id;
-	    }
+    }
+
+    //=========================
+    // GETTERS
+    //=========================
+
+    public int getId() {
+        return id;
+    }
+
+    public DiaSemana getDia() {
+        return dia;
+    }
+
+    public LocalTime getHoraInicio() {
+        return horaInicio;
+    }
+
+    public LocalTime getHoraFin() {
+        return horaFin;
+    }
+
+    //=========================
+    // SETTERS
+    //=========================
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setDia(DiaSemana dia) {
+        this.dia = dia;
+    }
+
+    public void setHoraInicio(LocalTime horaInicio) {
+        this.horaInicio = horaInicio;
+    }
+
+    public void setHoraFin(LocalTime horaFin) {
+        this.horaFin = horaFin;
+    }
+
+    // MÉTODOS
+
+    @Override
+    public String toString() {
+
+        return dia + "  " + horaInicio + " - " + horaFin;
+
+    }
 
 
-	    public String getDia() {
-	        return dia;
-	    }
-
-	    public void setDia(String dia) {
-	        this.dia = dia;
-	    }
-
-	    public LocalTime getHoraInicio() {
-	        return horaInicio;
-	    }
-
-	    public void setHoraInicio(LocalTime horaInicio) {
-	        this.horaInicio = horaInicio;
-	    }
-
-	    public LocalTime getHoraFin() {
-	        return horaFin;
-	    }
-
-	    public void setHoraFin(LocalTime horaFin) {
-	        this.horaFin = horaFin;
-	    }
 
 	
 }

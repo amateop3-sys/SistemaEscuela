@@ -1,5 +1,7 @@
 package model;
 
+import enums.Genero;
+
 public class Personas {
 	
 
@@ -10,7 +12,8 @@ public class Personas {
 	private String telefono;
 	private String direccion;
 	private int edad;
-	private String genero;
+
+	private Genero genero;
 	
 	// constructor vacio
 	public Personas() {
@@ -20,7 +23,7 @@ public class Personas {
 	
 	// constructor lleno
 	public Personas(String nombre, String apellidos, String dpi, String telefono, String direccion, int edad,
-			String genero) {
+			Genero genero) {
 		super();
 		this.nombre = nombre;
 		this.apellidos = apellidos;
@@ -94,12 +97,12 @@ public class Personas {
 	}
 
 
-	public String getGenero() {
+	public Genero getGenero() {
 		return genero;
 	}
 
 
-	public void setGenero(String genero) {
+	public void setGenero(Genero genero) {
 		this.genero = genero;
 	}
 

@@ -1,5 +1,7 @@
 package model;
 
+import java.util.ArrayList;
+
 public class Materia {
 	
 	private int id;
@@ -8,6 +10,8 @@ public class Materia {
 	private String descripcion;
 	private int creditos;
 	private boolean activa;
+	
+	private ArrayList<Curso> cursos;
 	
 	// constructor vacio
 	public Materia() {
@@ -25,6 +29,7 @@ public class Materia {
 		this.descripcion = descripcion;
 		this.creditos = creditos;
 		this.activa = activa;
+		setCursos(new ArrayList<>());
 	}
 
 
@@ -95,6 +100,18 @@ public class Materia {
 	@Override
 	public String toString() {
 		return  codigo + " - " + nombre;
+	}
+
+
+
+	public ArrayList<Curso> getCursos() {
+		return cursos;
+	}
+
+
+
+	public void setCursos(ArrayList<Curso> cursos) {
+		this.cursos = cursos;
 	}
 	
 	

@@ -1,5 +1,9 @@
 package model;
 
+import java.util.ArrayList;
+
+import enums.EstadoCurso;
+
 public class Curso {
 	
 	
@@ -10,9 +14,12 @@ public class Curso {
 	private Catedratico catedratico;
 	private Grado grado;
 	private Seccion seccion;
-	private boolean activo;
+
+	private EstadoCurso estado;
 	
 	private CicloEscolar cicloEscolar;
+	
+	private ArrayList<Horario> horarios;
 	
 	// constructor vacio
 	public Curso() {
@@ -22,7 +29,7 @@ public class Curso {
 
 	// constructor lleno
 	public Curso(int id, String codigo, Materia materia, Catedratico catedratico, Grado grado, Seccion seccion,
-			boolean activo, CicloEscolar cicloEscolar) {
+			EstadoCurso estado, CicloEscolar cicloEscolar, ArrayList<Horario> horarios) {
 		super();
 		this.id = id;
 		this.codigo = codigo;
@@ -30,14 +37,18 @@ public class Curso {
 		this.catedratico = catedratico;
 		this.grado = grado;
 		this.seccion = seccion;
-		this.activo = activo;
-		this.cicloEscolar= cicloEscolar;
+		this.estado = estado;
+		this.cicloEscolar = cicloEscolar;
+		this.setHorarios(horarios);
 	}
 
 
+	// getters and setters
 	public int getId() {
 		return id;
 	}
+
+
 
 
 	public void setId(int id) {
@@ -95,13 +106,13 @@ public class Curso {
 	}
 
 
-	public boolean isActivo() {
-		return activo;
+	public EstadoCurso getEstado() {
+		return estado;
 	}
 
 
-	public void setActivo(boolean activo) {
-		this.activo = activo;
+	public void setEstado(EstadoCurso estado) {
+		this.estado = estado;
 	}
 
 
@@ -113,9 +124,19 @@ public class Curso {
 	public void setCicloEscolar(CicloEscolar cicloEscolar) {
 		this.cicloEscolar = cicloEscolar;
 	}
-	
-	
-	
+
+
+	public ArrayList<Horario> getHorarios() {
+		return horarios;
+	}
+
+
+	public void setHorarios(ArrayList<Horario> horarios) {
+		this.horarios = horarios;
+	}
+
+
+
 	
 	
 	

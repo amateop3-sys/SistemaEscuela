@@ -1,5 +1,7 @@
 package model;
 
+import java.util.ArrayList;
+
 public class Catedratico extends Personas {
 	
 	private String codigoEmpleado;
@@ -8,6 +10,7 @@ public class Catedratico extends Personas {
 	private double salario;
 	private boolean Activo;
 	
+	private ArrayList<Curso> cursos;
 	// constructor vacio
 	public Catedratico() {
 		super();
@@ -22,6 +25,7 @@ public class Catedratico extends Personas {
 		this.especialidad = especialidad;
 		this.salario = salario;
 		Activo = activo;
+		cursos = new ArrayList<>();
 	}
 
 
@@ -94,7 +98,11 @@ public class Catedratico extends Personas {
 	
 	
 	
-	
+	public void agregarCurso(Curso curso){
+
+	    cursos.add(curso);
+
+	}
 	
 	
 	

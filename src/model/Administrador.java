@@ -16,10 +16,15 @@ public class Administrador extends Personas{
 	}
 	
 	// constructor con atributos
-	public Administrador(String nombre, String apellidos, String dpi, String telefono, String direccion, int edad,
-			String genero) {
-		super(nombre, apellidos, dpi, telefono, direccion, edad, genero);
-		// TODO Auto-generated constructor stub
+
+
+	public Administrador(String codigoEmpleado, String usuario, String password, String rol, boolean activo) {
+		super();
+		this.codigoEmpleado = codigoEmpleado;
+		this.usuario = usuario;
+		this.password = password;
+		this.rol = rol;
+		Activo = activo;
 	}
 
 	
@@ -27,6 +32,7 @@ public class Administrador extends Personas{
 	public String getCodigoEmpleado() {
 		return codigoEmpleado;
 	}
+
 
 	public void setCodigoEmpleado(String codigoEmpleado) {
 		this.codigoEmpleado = codigoEmpleado;
